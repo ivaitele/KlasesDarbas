@@ -1,0 +1,121 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+footer {
+    clear: both;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wraper {
+    display: grid;
+    grid-template-areas:
+        'h'
+        't'
+        'f';
+    height: 100%;
+    width: var(--wraper-with);
+}
+
+.wraper > * {
+    border: 1px solid red;
+}
+
+main .info {
+    grid-area: i;
+}
+
+main .info1 {
+    grid-area: i1;
+}
+
+main .button {
+    grid-area: b;
+}
+
+main .pic1 {
+    grid-area: p1;
+}
+
+main .pic2 {
+    grid-area: p2;
+}
+
+main .pic3 {
+    grid-area: p3;
+}
+
+.wraper > header {
+    grid-area: h;
+}
+
+.wraper > footer {
+    grid-area: f;
+}
+
+.wraper > main {
+    grid-area: t;
+}
+main {
+    display: grid;
+    grid-template-areas:
+        'i'
+        'i1'
+        'b'
+        'foto';
+}
+
+main > .foto {
+    grid-area: foto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    display: grid;
+    grid-template-areas:
+            'l s s'
+            'l n n'
+            'l n n';
+}
+
+footer {
+    display: grid;
+    grid-template-areas:
+            'l1 n2 n2';
+}
+
+footer .logo1 {
+    grid-area: l1;
+    display: flex;
+    justify-content: center;
+}
+
+footer .menu1 {
+    grid-area: n2;
+}
+
+header .logo {
+    grid-area: l;
+    display: flex;
+    justify-content: center;
+}
+
+header .slogan {
+    grid-area: s;
+    display: flex;
+    justify-content: center;
+}
+
+header nav {
+    grid-area: n;
+}

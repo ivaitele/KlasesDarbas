@@ -1,0 +1,15 @@
+@keyframes mano-animacija {
+    0% {
+        background-color: green;
+        color: red;
+    }
+    100% {
+        background-color: red;
+        color: green;
+    }
+}
+
+nav li:hover {
+    animation: mano-animacija 700ms forwards;
+
+}

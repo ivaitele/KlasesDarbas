@@ -1,0 +1,91 @@
+/* Extra maži įrenginiai (telefonai, 600px ir žemiau) */
+@media only screen and (max-width: 600px) {
+    .wraper {
+        background-color: yellow;
+        width: 300px;
+        grid-template-areas:
+        'h'
+        't'
+        'f';
+    }
+
+    body > header {
+        grid-template-areas:
+            'n';
+    }
+    header .slogan, header .logo {
+        display: none;
+    }
+}
+
+/* Maži įrenginiai (statmenos planšetės, ar gulsti telefonai 600px ir aukščiau) */
+@media only screen and (min-width: 600px) {
+    .wraper {
+        background-color: lightblue;
+        width: 600px;
+        grid-template-areas:
+        'h'
+        't'
+        'f';
+    }
+
+    body > header {
+        grid-template-areas:
+            'l'
+            'n';
+    }
+    header .slogan {
+        display: none;
+    }
+    header .logo {
+        display: block;
+    }
+}
+
+/* Vidutiniai įrenginiai (gulsčios planšetės ar maži laptopai, 768px ir aukščiau) */
+@media only screen and (min-width: 768px) {
+    .wraper {
+        background-color: lightcoral;
+        width: 700px;
+        grid-template-areas:
+        'h'
+        't'
+        'f';
+    }
+    body > header {
+        grid-template-areas:
+            'l s'
+            'n n';
+    }
+
+    header .slogan {
+        display: block;
+    }
+    header .logo {
+        display: block;
+    }
+}
+
+/* Dideli įrenginiai (laptopai, staliniai PC, 992px ir aukščiau) */
+@media only screen and (min-width: 992px) {
+    .wraper {
+        background-color: orange;
+        width: 900px;
+        grid-template-areas:
+        'h h h h'
+        't t t t'
+        'f f f f';
+    }
+}
+
+/* Extra dideli įrenginiai (dideli laptopai ir stalinai PC, 1200px ir aukščiau) */
+@media only screen and (min-width: 1200px) {
+    .wraper {
+        background-color: white;
+        width: 1200px;
+        grid-template-areas:
+        'h h h h'
+        't t t t'
+        'f f f f';
+    }
+}
