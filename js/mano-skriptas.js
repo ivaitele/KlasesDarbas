@@ -4,7 +4,7 @@ console.log('Kintamojo a reikšmė: ' + a);
 a = 2;
 console.log('Kintamojo a reikšmė: ' + a);
 
-//naujas pakeitimas
+//naujas pakeitimasssss
 
 // Antroji užduotis
 let vardasPavarde = 'Irmantas Vaitele';
