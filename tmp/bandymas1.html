@@ -6,13 +6,22 @@
 </head>
 <body>
 <h1> Mano pirmas puslapis</h1>
-<p>Mano pirmas paragrafas</p>
+<p>apskritimo ilgis ir plotas</p>
 
-<p id="demo">retertgit</p>
+<p id = "ilgis"></p>
+<p id = "plotas"></p>
+
+<button onclick = "fun()"> Apskritimo ilgis ir plotas </button>
 
 <script>
-    var carName = "Volvo";
-    document.getElementById("demo").innerHTML = carName;
+    let r = 15;
+    const pi= 3.14;
+    function fun()
+    {
+        document.getElementById('ilgis').innerHTML = 'Apskritimo plotas: ' + pi * r * r ;
+        document.getElementById('plotas').innerHTML = 'Apskritimo ilgis: ' + 2 * pi * r ;
+    }
+
 </script>
 
 </body>

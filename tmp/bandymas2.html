@@ -11,8 +11,19 @@
 <p id="demo"></p>
 
 <script>
-let name = "Irmantas"
-    document.write('<h2>Labas' + name + );
+    const findOverlap = ([a,b], [c,d]) => {
+        const x = c
+        const y = b > d ? d:b
+        if (b < c) {
+            return 'nerasta'
+        }
+
+        return [x,y]
+    }
+
+    console.log(findOverlap([-5, 0], [-4, 4]))
+    console.log(findOverlap([-5, 10], [-4, 4]))
+    console.log(findOverlap([-5, 0], [2, 4]))
 </script>
 
 </body>
