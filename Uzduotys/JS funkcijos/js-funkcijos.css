@@ -1,0 +1,32 @@
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0;
+  padding: 1em;
+}
+
+pre {
+  color: #333;
+}
+
+article {
+  border: solid 1px #ccc;
+  margin: 1em 0;
+  padding: 1em;
+}
+
+input {
+  min-width: 600px;
+  padding: 0.5em 1em;
+  border: 1px solid #999;
+  border-radius: 3px;
+}
+
+button {
+  padding: 0.5em 1em;
+  border: 1px solid #999;
+  border-radius: 3px;
+}
+
+.result {
+  color: blue;
+}
