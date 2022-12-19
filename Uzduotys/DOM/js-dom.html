@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Document</title>
+
+    <link rel="stylesheet" href="js-dom.css"/>
+</head>
+<body>
+<section>
+    <article>
+        <h1>Uzduotis #1</h1>
+        <p>
+            Sukurkite HTML dokumentą su mygtuku ir teksto lauku. Naudodami Java
+            Script, padarykite taip, kad paspaudus mygtuką, teksto lauke atsirastų
+            žinutė "Labas, pasauli!".
+        </p>
+
+        <h2>Resultatas</h2>
+        <div>
+            <p id="result-1"></p>
+            <button id="button-1">Hello</button>
+        </div>
+    </article>
+
+    <article>
+        <h1>Uzduotis #2</h1>
+        <p>
+            Sukurkite HTML dokumentą su keliais pasirinkimo laukais ir mygtuku.
+            Naudodami Java Script, padarykite taip, kad paspaudus mygtuką,
+            atsirastų HTML forma su keliais formos elementais.
+        </p>
+
+        <h2>Resultatas</h2>
+        <div>
+            <div id="result-2" class="hidden-form">
+                <div class="form-element">
+                    <label>Vardas</label>
+                    <input value="Jonas"/>
+                </div>
+                <div class="form-element">
+                    <label>Pavarde</label>
+                    <input value="Petrauskas"/>
+                </div>
+                <div class="form-element">
+                    <label>Email</label>
+                    <input value="jonas@petrauskas.lt"/>
+                </div>
+            </div>
+
+            <button id="button-2">Show form</button>
+        </div>
+    </article>
+
+    <article>
+        <h1>Uzduotis #3</h1>
+        <p>
+            Sukurkite HTML dokumentą su lentele, kurioje yra keli stulpeliai ir
+            eilutės. Naudodami Java Script, padarykite taip, kad paspaudus
+            mygtuką, atsirastų nauja eilutė lentelėje su įvestais duomenimis.
+            Duomenys turėtų būti įvesti į formos laukus.
+        </p>
+
+        <h2>Resultatas</h2>
+        <div>
+            <div>
+                <div class="form-element">
+                    <label>Vardas</label>
+                    <input id="vardas" value="Jonas"/>
+                </div>
+                <div class="form-element">
+                    <label>Pavarde</label>
+                    <input id="pavarde" value="Petrauskas"/>
+                </div>
+                <div class="form-element">
+                    <label>Email</label>
+                    <input id="email" value="jonas@petrauskas.lt"/>
+                </div>
+            </div>
+
+            <button id="button-3">Add to table</button>
+
+            <br/>
+            <br/>
+            <table id="table-3">
+                <tr>
+                    <th>Vardas</th>
+                    <th>Pavarde</th>
+                    <th>Email</th>
+                </tr>
+                <tr>
+                    <td>Petras</td>
+                    <td>Petrauskas</td>
+                    <td>petras@petrauskas.lt</td>
+                </tr>
+            </table>
+        </div>
+    </article>
+</section>
+</body>
+
+<script src="js-dom.js"></script>
+</html>
