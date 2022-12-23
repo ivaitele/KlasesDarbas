@@ -1,5 +1,4 @@
 <?php
-session_start();
 // one
 function tpl($templateName, $data) {
     $templateContent = file_get_contents('tpls/'.$templateName.'.html');
@@ -84,42 +83,8 @@ $getPage1 = function() use ($zmones) {
     return [$form, $table];
 };
 
-$isLoggedIn = true;
-
-function login() {
-//    print_r($_SESSION);
-    $user = isset($_SESSION['user']) ? $_SESSION['user'] : false;
-
-    // LOGIN
-    if (isset($_POST['login']) && $_POST['login'] === 'on') {
-        $user = [
-            "firstName" => $_POST['firstName'],
-            "lastName" => $_POST['lastName']
-        ];
-
-        $_SESSION['user'] = $user;
-    }
-
-    // LOGOUT
-    if (isset($_POST['login']) && $_POST['login'] === 'off') {
-        $user = false;
-        $_SESSION['user'] = false;
-    }
-
-    return $user;
-}
-
-$isLoggedIn = login();
-
-
-$body = '<h1>Please login in</h1>';
-$user = tpl('user.login', []);
-
-if ($isLoggedIn) {
-    $body = $getPage1();
-    $user = tpl('user.logout', $isLoggedIn);
-}
+$body = $getPage1();
 
 //=======================================================================================
 
-echo tpl('layout', ["body" => $body, "user" =>$user]);
+echo tpl('layout', ["body" => $body]);
