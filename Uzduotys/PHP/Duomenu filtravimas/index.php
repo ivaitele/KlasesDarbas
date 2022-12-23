@@ -11,7 +11,7 @@ function tpl($templateName, $data) {
     return $templateContent;
 }
 
-// many_temp
+// many
 function tplMap($tempalteName, $list) {
     $i = 0;
     $result = [];
@@ -84,7 +84,6 @@ $getPage1 = function() use ($zmones) {
 };
 
 $body = $getPage1();
-
 //=======================================================================================
 
 echo tpl('layout', ["body" => $body]);
