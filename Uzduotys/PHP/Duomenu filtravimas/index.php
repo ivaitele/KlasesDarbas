@@ -11,7 +11,7 @@ function tpl($templateName, $data) {
     return $templateContent;
 }
 
-// many
+// many_temp
 function tplMap($tempalteName, $list) {
     $i = 0;
     $result = [];
